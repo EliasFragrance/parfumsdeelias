@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-kicker">Policy</div>
+      <h1 class="page-title">Privacy Policy.</h1>
+      <p class="page-intro">
+        We value your privacy and are committed to protecting your personal information.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container policy">
+      <h2>Information We Collect.</h2>
+      <p>
+        We collect information you provide directly, such as when you create
+        an account, place an order, or subscribe to our newsletter. This may
+        include your name, email address, billing and shipping details.
+      </p>
+
+      <h2>How We Use Your Information.</h2>
+      <p>
+        We use your information to process orders, provide customer support,
+        improve our website, and communicate about releases, offers, and updates
+        (when you have opted in).
+      </p>
+
+      <h2>Sharing of Information.</h2>
+      <p>
+        We do not sell your personal data. We may share information with
+        trusted service providers solely for the purpose of operating our
+        business (for example, payment processing and shipping).
+      </p>
+
+      <h2>Your Rights.</h2>
+      <p>
+        Depending on your region, you may have rights to access, correct,
+        or request deletion of your personal data. Contact us for any such request.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
