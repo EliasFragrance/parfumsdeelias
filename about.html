@@ -1,247 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>About – Parfums de Elias</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The story behind Parfums de Elias – a modern fragrance house built for ambitious men who care about first impressions." />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #050509;
-      color: #f7f7f7;
-      line-height: 1.6;
-    }
-    a { color: inherit; text-decoration: none; }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 5vw;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      position: sticky;
-      top: 0;
-      background: rgba(5,5,9,0.96);
-      backdrop-filter: blur(14px);
-      z-index: 10;
-    }
-    .logo {
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-    }
-    nav a {
-      margin-left: 20px;
-      font-size: 0.9rem;
-      opacity: 0.85;
-    }
-    nav a:hover { opacity: 1; }
+  <meta charset="UTF-8">
+  <title>About · Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    main {
-      padding: 40px 5vw 60px;
-      max-width: 900px;
-      margin: 0 auto;
+  <style>
+    body {
+      margin: 40px;
+      background: #000;
+      color: #d4af37;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: white;
     }
 
     h1 {
-      font-size: clamp(2rem, 3vw, 2.6rem);
-      margin-bottom: 12px;
-    }
-    .kicker {
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      color: rgba(247,247,247,0.7);
-      margin-bottom: 10px;
-    }
-    .intro {
-      font-size: 1rem;
-      color: rgba(247,247,247,0.8);
-      max-width: 660px;
-      margin-bottom: 26px;
+      font-size: 2.8rem;
+      margin-top: 30px;
+      letter-spacing: 2px;
     }
 
-    section {
-      margin-top: 26px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-    section h2 {
-      font-size: 1.3rem;
-      margin-bottom: 8px;
-    }
-    section p {
-      font-size: 0.94rem;
-      color: rgba(247,247,247,0.8);
-      margin-bottom: 10px;
-    }
-
-    ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-    li {
-      margin-bottom: 6px;
-      font-size: 0.94rem;
-      color: rgba(247,247,247,0.82);
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      border: 1px solid rgba(245,210,122,0.5);
-      padding: 5px 11px;
-      font-size: 0.75rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      margin-top: 10px;
-      color: rgba(245,210,122,0.9);
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 10px 20px;
-      border-radius: 999px;
-      border: 1px solid #f5d27a;
-      font-size: 0.9rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: linear-gradient(135deg, #f5d27a, #b8860b);
-      color: #111;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    footer {
-      padding: 30px 5vw 20px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      font-size: 0.8rem;
-      color: rgba(247,247,247,0.6);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    footer a {
-      opacity: 0.85;
-      margin-left: 12px;
-    }
-    footer a:hover { opacity: 1; }
-
-    @media (max-width: 800px) {
-      header { padding-inline: 4vw; }
-      main { padding-inline: 4vw; }
+    p {
+      max-width: 700px;
+      font-size: 1.2rem;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="logo"><a href="index.html">Parfums de Elias</a></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#story">Our Story</a>
-      <a href="#values">Values</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="fragrances.html">FRAGRANCES</a>
+  </nav>
 
-  <main>
-    <div class="kicker">About the house</div>
-    <h1>The story behind Parfums de Elias</h1>
-    <p class="intro">
-      Parfums de Elias was created for the guy who outgrew body sprays and generic designer bottles,
-      but still wanted scents that punch above their price – and match the man he’s becoming.
-    </p>
+  <h1>ABOUT</h1>
 
-    <section id="story">
-      <h2>It started with self-improvement</h2>
-      <p>
-        The brand was founded by Alex, a business graduate and fragrance addict who was obsessed
-        with one question:
-      </p>
-      <p><em>“If I’m putting in work in the gym, in my style, in my career – why would my fragrance be an afterthought?”</em></p>
-      <p>
-        Between late nights studying, travelling through Europe, and building businesses from his
-        laptop, Alex noticed the same thing: the right scent changes how people remember you.
-        But most fragrances either smelled like everyone else, or felt disconnected from how real
-        guys actually live.
-      </p>
-      <p>
-        Parfums de Elias is his answer – a focused collection of modern fragrances built around
-        real life: gym, work, dates, summers, and nights out.
-      </p>
-      <span class="pill">Built from real life</span>
-    </section>
+  <p>
+    Parfums de Elias is a luxury fragrance house dedicated to crafting bold,
+    unforgettable scents.  
+    Each creation is made to elevate confidence, presence, and identity —
+    leaving a lasting impression wherever you go.
+  </p>
 
-    <section id="vision">
-      <h2>Our vision</h2>
-      <p>
-        We’re not trying to be the biggest fragrance house in the world. We’re building something
-        tighter: a small, serious lineup that covers your lifestyle without 20 bottles gathering dust.
-      </p>
-      <p>
-        Each release is designed with a specific moment in mind – night out, date night, summer,
-        nautical – so you always know exactly when to wear it.
-      </p>
-    </section>
-
-    <section id="values">
-      <h2>What we care about</h2>
-      <p>Three things drive every decision we make:</p>
-      <ul>
-        <li><strong>Real performance.</strong> Fragrances that actually last and project – without choking the room.</li>
-        <li><strong>Intentional design.</strong> Bottles and branding that look as good on your shelf as they smell on your skin.</li>
-        <li><strong>Respect for the wearer.</strong> Transparent messaging, no fake hype, and scents that help you feel put-together, not insecure.</li>
-      </ul>
-    </section>
-
-    <section id="collection">
-      <h2>The collection</h2>
-      <p>
-        Our first drop, <strong>RODAYO</strong>, is a warm, confident night-out fragrance built for
-        rooftop bars, lounges, and long nights.
-      </p>
-      <p>
-        Following RODAYO, we’re building a tight core lineup:
-      </p>
-      <ul>
-        <li><strong>Casanova</strong> – a smooth, intimate date-night scent for close moments.</li>
-        <li><strong>Nautique</strong> – a fresh, salty, clean scent inspired by the sea and travel.</li>
-        <li><strong>Aventuro</strong> – a bright, energetic summer fragrance for hot days and vacations.</li>
-      </ul>
-      <p>
-        Together, they cover the main scenarios in your life – so you don’t waste time staring at
-        a shelf full of almost-identical scents.
-      </p>
-    </section>
-
-    <section id="founder">
-      <h2>From idea to bottle</h2>
-      <p>
-        Parfums de Elias is still independent and founder-led. That means every creative decision –
-        from the way the bottle looks to how the fragrance opens on skin – is intentional.
-      </p>
-      <p>
-        You’re not just buying a logo. You’re buying into a mindset: taking your life seriously,
-        investing in your image, and smelling like you actually have your stuff together.
-      </p>
-      <a href="index.html#newsletter" class="btn">Join the launch list</a>
-    </section>
-  </main>
-
-  <footer>
-    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
-    <div>
-      <a href="index.html">Home</a>
-<a href="https://www.instagram.com/parfumsdeelias/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
