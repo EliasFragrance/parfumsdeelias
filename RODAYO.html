@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RODAYO – Extrait de Parfum | Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="RODAYO by Parfums de Elias – a bold, magnetic extrait crafted for unforgettable nights, built on spice, tobacco, and warm gourmand tones."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container two-column">
+      <div>
+        <div class="page-kicker">Extrait de Parfum</div>
+        <h1 class="page-title">RODAYO – Own the Night.</h1>
+        <p class="page-intro">
+          RODAYO is a bold evening extrait crafted for nights filled with motion,
+          music, and seduction. A composition that ignites on skin and
+          lingers long after the moment ends.
+        </p>
+        <div style="margin-top: 1.4rem;">
+          <span class="badge">12–16 Hour Performance</span>
+        </div>
+      </div>
+
+      <aside class="detail-card">
+        <div class="detail-tag">Price &amp; Format</div>
+        <h2 class="detail-heading">50 mL Extrait · $XXX</h2>
+        <p class="text-muted">
+          High-impact concentration designed to project and persist
+          through the entire night.
+        </p>
+        <div class="bottle-placeholder" style="margin-top: 1.2rem;">
+          <div class="bottle-shape">
+            <div class="bottle-cap"></div>
+            <div class="bottle-label">RODAYO</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="width: 100%; margin-top: 1.2rem;">
+          Add to bag
+        </button>
+        <p class="text-muted" style="margin-top: 0.6rem; font-size: 0.8rem;">
+          Taxes and shipping calculated at checkout.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-column">
+      <div>
+        <h2 class="section-title">Scent Profile.</h2>
+        <p class="text-muted">
+          Built around spicy aromatics, warm resins, and addictive sweetness, RODAYO
+          wraps the wearer in a magnetic aura that feels effortlessly dominant.
+        </p>
+        <div style="margin-top: 1rem;">
+          <h3 class="detail-heading">Notes.</h3>
+          <p class="text-muted"><strong>Top:</strong> Grapefruit, Pink Pepper, Bergamot</p>
+          <p class="text-muted"><strong>Heart:</strong> Cardamom, Ginger, Orange Blossom Absolute</p>
+          <p class="text-muted"><strong>Base:</strong> Tobacco Absolute, Vanilla Absolute, Tonka Bean Absolute, Amber Resin, Cedarwood, Iso E Super</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="detail-heading">The RODAYO Man.</h3>
+        <p class="text-muted">
+          For the one who steps into the night with intention. He doesn't chase the room;
+          the room is already paying attention. RODAYO amplifies that presence — powerful,
+          confident, and unapologetically memorable.
+        </p>
+        <p class="text-muted">
+          Pair with crisp tailoring, dim lighting, and nights that end long after the last track.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
