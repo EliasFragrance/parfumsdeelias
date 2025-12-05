@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shipping &amp; Returns – Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-kicker">Support</div>
+      <h1 class="page-title">Shipping &amp; Returns.</h1>
+      <p class="page-intro">
+        We aim to deliver every order safely, quickly, and with the level
+        of care expected from a luxury house.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container policy">
+      <h2>Shipping.</h2>
+      <p>
+        Orders are typically processed within 1–2 business days. You will
+        receive a confirmation email followed by tracking information once
+        your order has left our atelier.
+      </p>
+      <p>
+        Shipping options, transit times, and costs are calculated at checkout
+        based on your location.
+      </p>
+
+      <h2>Returns.</h2>
+      <p>
+        Due to the nature of fragrance products, we can only accept returns
+        on sealed, unused items in their original condition and packaging.
+      </p>
+      <p>
+        If your order arrives damaged or incorrect, please contact us within
+        48 hours of delivery with your order number and photos so we can assist.
+      </p>
+
+      <h2>Exchanges.</h2>
+      <p>
+        At this time we do not offer direct exchanges. If eligible, you may
+        return a product according to our policy and place a new order.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
