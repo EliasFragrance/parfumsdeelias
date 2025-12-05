@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQ – Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-kicker">FAQ</div>
+      <h1 class="page-title">Questions, Answered.</h1>
+      <p class="page-intro">
+        Below are answers to the most common questions about our fragrances,
+        shipping, and experience.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="faq-item">
+        <div class="faq-question">How long do your fragrances last?</div>
+        <div class="faq-answer">
+          Our extrait and eau de parfum concentrations are designed to provide
+          8–16 hours of performance depending on your skin chemistry and environment.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Are your products cruelty-free?</div>
+        <div class="faq-answer">
+          Yes. We do not test on animals, and we require the same commitment
+          from our suppliers.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Where are your fragrances made?</div>
+        <div class="faq-answer">
+          All blends are formulated, macerated, and bottled in Canada under
+          strict quality control.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you offer samples?</div>
+        <div class="faq-answer">
+          Sample sets are in development and will be released in limited
+          batches. Join our email list to be notified first.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I return or exchange a fragrance?</div>
+        <div class="faq-answer">
+          Due to the nature of fragrance products, we can only accept returns
+          on sealed, unused items. Please review our Shipping &amp; Returns policy
+          for full details.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
