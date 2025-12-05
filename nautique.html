@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nautique – Eau de Parfum | Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container two-column">
+      <div>
+        <div class="page-kicker">Eau de Parfum</div>
+        <h1 class="page-title">Nautique – Fresh, Refined, Effortlessly Powerful.</h1>
+        <p class="page-intro">
+          Nautique is a modern aquatic inspired by salt air, blue horizons,
+          and the calm confidence of a man fully in control.
+        </p>
+      </div>
+
+      <aside class="detail-card">
+        <div class="detail-tag">Price &amp; Format</div>
+        <h2 class="detail-heading">50 mL EdP · $XXX</h2>
+        <p class="text-muted">
+          A versatile signature for daytime, office, and warm evenings.
+        </p>
+        <div class="bottle-placeholder" style="margin-top: 1.2rem;">
+          <div class="bottle-shape">
+            <div class="bottle-cap"></div>
+            <div class="bottle-label">NAUTIQUE</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="width: 100%; margin-top: 1.2rem;">
+          Add to bag
+        </button>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-column">
+      <div>
+        <h2 class="section-title">Scent Profile.</h2>
+        <p class="text-muted">
+          Clean citrus, ozone, and dry woods blend into a composition that feels
+          crisp, composed, and increasingly addictive as it dries down.
+        </p>
+        <div style="margin-top: 1rem;">
+          <h3 class="detail-heading">Notes.</h3>
+          <p class="text-muted"><strong>Top:</strong> Bergamot, Lemon, Marine Accord, Pink Pepper</p>
+          <p class="text-muted"><strong>Heart:</strong> Sea Breeze Accord, Lavender, Geranium</p>
+          <p class="text-muted"><strong>Base:</strong> Ambroxan, Vetiver, Cedarwood</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="detail-heading">Character.</h3>
+        <p class="text-muted">
+          Nautique is built for clarity and ambition. It’s the scent you reach for
+          when the agenda is full, the stakes are high, and there’s no room to miss.
+        </p>
+        <p class="text-muted">
+          Perfect with tailoring, casual smart looks, or elevated streetwear.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
