@@ -1,57 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About · Parfums de Elias</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 40px;
-      background: #000;
-      color: #d4af37;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
+  <meta charset="UTF-8" />
+  <title>The House – Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
     }
-
-    nav a {
-      margin-right: 20px;
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin-top: 30px;
-      letter-spacing: 2px;
-    }
-
-    p {
-      max-width: 700px;
-      font-size: 1.2rem;
-    }
-  </style>
+  </script>
 </head>
-
 <body>
-  <nav>
-    <a href="index.html">HOME</a>
-    <a href="fragrances.html">FRAGRANCES</a>
-  </nav>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
 
-  <h1>ABOUT</h1>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-kicker">The House</div>
+      <h1 class="page-title">A House Built on Precision, Passion, and Purpose.</h1>
+      <p class="page-intro">
+        Parfums de Elias is a modern fragrance house rooted in the art of
+        seduction and self-expression. We create scents for the bold,
+        the driven, and the unapologetically ambitious.
+      </p>
+    </div>
+  </section>
 
-  <p>
-    Parfums de Elias is a luxury fragrance house dedicated to crafting bold,
-    unforgettable scents.  
-    Each creation is made to elevate confidence, presence, and identity —
-    leaving a lasting impression wherever you go.
-  </p>
+  <section class="section">
+    <div class="container two-column">
+      <div>
+        <h2 class="section-title">Our Philosophy.</h2>
+        <p class="text-muted">
+          Our work begins long before a bottle is filled. From raw material
+          selection to final maceration, every decision is made slowly,
+          intentionally, and without compromise.
+        </p>
+        <p class="text-muted">
+          We believe a fragrance should do three things:
+        </p>
+        <ul class="clean-list text-muted">
+          <li>• Tell a story.</li>
+          <li>• Elevate your presence.</li>
+          <li>• Last from first impression to final moment.</li>
+        </ul>
+        <p class="text-muted" style="margin-top: 0.6rem;">
+          That belief informs every formula, every bottle, and every release.
+        </p>
+      </div>
 
+      <div class="detail-card">
+        <div class="detail-tag">Craft</div>
+        <h3 class="detail-heading">From Formula to Skin.</h3>
+        <p class="text-muted">
+          Each composition is built from high quality aroma-chemicals and
+          naturals, balanced for clarity and performance. Concentrations are
+          chosen not for cost savings but for the experience on skin.
+        </p>
+        <p class="text-muted">
+          We test our fragrances in real life — late nights, crowded rooms,
+          open air — to ensure they perform where they matter most.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
