@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Collection – Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-kicker">The Collection</div>
+      <h1 class="page-title">Modern Fragrances for Those Who Lead.</h1>
+      <p class="page-intro">
+        A curated wardrobe of contemporary compositions designed for
+        statement-makers, main characters, and those who refuse to blend in.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-3">
+      <article class="card">
+        <div class="card-meta">Extrait de Parfum</div>
+        <h2 class="card-title">RODAYO</h2>
+        <p class="card-body">
+          A bold, night-ready extrait built on spice, tobacco, and warm gourmand tones.
+          Made for late evenings, crowded rooms, and unforgettable first impressions.
+        </p>
+        <p class="text-muted" style="margin-top: 0.5rem;">
+          <strong>Notes:</strong> Grapefruit, Pink Pepper, Bergamot, Cardamom, Ginger,
+          Orange Blossom, Tobacco, Vanilla, Tonka Bean, Amber, Cedarwood.
+        </p>
+        <a href="rodayo.html" class="btn btn-outline" style="margin-top: 0.9rem;">View Details</a>
+      </article>
+
+      <article class="card">
+        <div class="card-meta">Eau de Parfum</div>
+        <h2 class="card-title">Nautique</h2>
+        <p class="card-body">
+          A clean, elevated aquatic built on bright citrus, marine accord, and refined woods.
+          Ideal for daytime, office, and warm-weather evenings.
+        </p>
+        <p class="text-muted" style="margin-top: 0.5rem;">
+          <strong>Notes:</strong> Bergamot, Lemon, Marine Accord, Pink Pepper, Sea Breeze,
+          Lavender, Geranium, Ambroxan, Vetiver, Cedarwood.
+        </p>
+        <a href="nautique.html" class="btn btn-outline" style="margin-top: 0.9rem;">View Details</a>
+      </article>
+
+      <article class="card">
+        <div class="card-meta">Eau de Parfum</div>
+        <h2 class="card-title">Casanova</h2>
+        <p class="card-body">
+          A warm, intimate scent with amber, woods, and subtle sweetness.
+          Crafted for close encounters and quiet confidence.
+        </p>
+        <p class="text-muted" style="margin-top: 0.5rem;">
+          Perfect for dates, evening settings, and any moment that demands an unforgettable presence.
+        </p>
+        <a href="casanova.html" class="btn btn-outline" style="margin-top: 0.9rem;">View Details</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
