@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('images/rodayo.png'); /* Correct path */
+      background-image: url('Images/rodayo.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -19,67 +19,102 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+
+      /* Black overlay for luxury vibe */
+      background-color: rgba(0,0,0,0.75);
+      background-blend-mode: darken;
+
+      color: #d4af37; /* gold */
       font-family: 'Helvetica Neue', Arial, sans-serif;
     }
 
+    nav {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+    }
+
+    nav a {
+      color: #d4af37;
+      margin-left: 25px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
     .logo {
-      width: 180px; 
+      width: 180px;
       margin-bottom: 20px;
-      filter: drop-shadow(0 0 8px rgba(0,0,0,0.7));
+      filter: drop-shadow(0 0 12px rgba(212,175,55,0.8)); /* gold glow */
     }
 
     h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-      text-shadow: 0px 4px 12px rgba(0,0,0,0.7);
-      margin-bottom: 10px;
+      font-size: 3.5rem;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+      text-shadow: 0px 4px 20px black;
+      color: #d4af37;
     }
 
     p {
-      font-size: 1.4rem;
-      text-shadow: 0px 3px 8px rgba(0,0,0,0.6);
-      margin-bottom: 20px;
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+      text-shadow: 0px 3px 10px black;
+      color: #f1e4c2;
     }
 
     .btn {
-      padding: 12px 28px;
-      font-size: 1.1rem;
-      background: rgba(255,255,255,0.85);
+      padding: 14px 34px;
+      font-size: 1.2rem;
+      background: #d4af37;
       color: black;
-      border-radius: 6px;
+      border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
+      letter-spacing: 1px;
       transition: 0.3s ease;
+      box-shadow: 0 0 12px rgba(212,175,55,0.7);
     }
 
     .btn:hover {
       background: white;
-      transform: scale(1.05);
+      color: black;
+      transform: scale(1.07);
     }
 
     footer {
       position: absolute;
       bottom: 20px;
-      text-shadow: 0px 3px 6px rgba(0,0,0,0.6);
+      color: #a88f32;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Brand Logo -->
-  <img src="images/logo.png" alt="Parfums de Elias Logo" class="logo">
+  <nav>
+    <a href="about.html">ABOUT</a>
+    <a href="fragrances.html">FRAGRANCES</a>
+  </nav>
 
-  <h1>Parfums de Elias</h1>
-  <p>RODAYO · Coming 2025</p>
+  <img src="Images/logo.png" class="logo" alt="Parfums de Elias">
 
-  <a class="btn" href="https://www.instagram.com/parfumsdeelias/" target="_blank" rel="noopener noreferrer">
-    Instagram
+  <h1>PARFUMS DE ELIAS</h1>
+  <p>RODAYO · COMING 2025</p>
+
+  <a class="btn" href="https://www.instagram.com/parfumsdeelias/" target="_blank">
+    VISIT INSTAGRAM
   </a>
 
   <footer>
-    <p>© 2025 Parfums de Elias</p>
+    © 2025 Parfums de Elias — All Rights Reserved
   </footer>
 
 </body>
