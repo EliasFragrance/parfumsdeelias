@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Journal – Parfums de Elias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleNav() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('open');
+    }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">E</div>
+      <div class="brand-text">Parfums de Elias</div>
+    </a>
+    <nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="collection.html">Fragrances</a>
+        <a href="about.html">The House</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-kicker">Journal</div>
+      <h1 class="page-title">Inside the House.</h1>
+      <p class="page-intro">
+        Stories, process, and perspectives from Parfums de Elias.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-3">
+      <article class="card">
+        <div class="card-meta">Behind the Scent</div>
+        <h2 class="card-title">The Making of RODAYO.</h2>
+        <p class="card-body">
+          From the first trials of the tobacco accord to the final extrait
+          concentration, discover how RODAYO came to life.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-meta">Fragrance Wardrobe</div>
+        <h2 class="card-title">Building a Modern Masculine Collection.</h2>
+        <p class="card-body">
+          How to choose scents for work, nights out, and everything between
+          without ever smelling generic.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-meta">Craft</div>
+        <h2 class="card-title">Why Concentration Matters.</h2>
+        <p class="card-body">
+          A closer look at extrait vs eau de parfum, and how they translate
+          to performance on skin.
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span id="year"></span> Parfums de Elias. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="collection.html">Fragrances</a>
+      <a href="about.html">The House</a>
+      <a href="journal.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
